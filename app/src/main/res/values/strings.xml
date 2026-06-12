@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Biblioteca</string>
     <string name="titulo_livro">TÍTULO DO LIVRO</string>
+    <string name="desc_livro_lorem" translatable="false">Descrição do livro: Lorem ipsum dolor sit amet, consecteteur is ent de rotdo loktamarf. Feti cajat limer gor matde finn.</string>
 </resources>

@@ -43,6 +43,7 @@ public class AdapterLivros extends RecyclerView.Adapter<AdapterLivros.ViewHolder
         // Faz o posicionamento dos componentes e o recebimento dos cliques (todos os mecanismos ficam aqui) get e set, etc.
         holder.ModeloImgLivros.setImageResource(LstLivros.get(position).getImgLivro());
         holder.ModeloTituloLivro.setText(LstLivros.get(position).getTitulo());
+        holder.ModeloDescLivro.setText(LstLivros.get(position).getDescricao());
     }
 
     @Override
@@ -53,11 +54,12 @@ public class AdapterLivros extends RecyclerView.Adapter<AdapterLivros.ViewHolder
 
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
 
         CardView ModeloCardLivros;
         ImageView ModeloImgLivros;
         TextView ModeloTituloLivro;
+        TextView ModeloDescLivro;
 
         public ViewHolder(@NonNull View itemView) {
 
@@ -65,7 +67,7 @@ public class AdapterLivros extends RecyclerView.Adapter<AdapterLivros.ViewHolder
             ModeloCardLivros =  itemView.findViewById(R.id.ModeloCardLivros);
             ModeloImgLivros = itemView.findViewById(R.id.ModeloImgLivros);
             ModeloTituloLivro = itemView.findViewById(R.id.ModeloTituloLivro);
-
+            ModeloDescLivro = itemView.findViewById(R.id.ModeloDescLivro);
         }
     }
 }

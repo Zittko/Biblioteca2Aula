@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         LstLivros = new ArrayList<>();
 
-        // LstLivros.add(new Livros("A Dama da Morte", "Suspense", R.drawable.adamadamorte, 29.90));
+        // LstLivros.add(new Livros("Titulo", "Desc", [imagem (R.drawable.imagem.ext], "...", "..."));
 
         AdapterLivros adapterLivros = new AdapterLivros(getApplicationContext(), LstLivros);
         idRecLivros.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));

@@ -2,13 +2,13 @@ package br.com.etecia.myapp;
 
 public class Livros {
     private String titulo;
-    private String categoria;
+    private String descricao;
     private int imgLivro;
     private double preco;
 
-    public Livros(String titulo, String categoria, int imgLivro, double preco) {
+    public Livros(String titulo, String descricao, int imgLivro, double preco) {
         this.titulo = titulo;
-        this.categoria = categoria;
+        this.descricao = descricao;
         this.imgLivro = imgLivro;
         this.preco = preco;
     }
@@ -17,8 +17,8 @@ public class Livros {
         return titulo;
     }
 
-    public String getCategoria() {
-        return categoria;
+    public String getDescricao() {
+        return descricao;
     }
 
     public int getImgLivro() {
@@ -33,8 +33,8 @@ public class Livros {
         this.titulo = titulo;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setDescricao(String categoria) {
+        this.descricao = descricao;
     }
 
     public void setImgLivro(int imgLivro) {
